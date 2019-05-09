@@ -42,7 +42,9 @@ public class ClientControlleur {
 	@PostMapping("/")
 	public ResponseEntity<?> create(@Valid @RequestBody Clients client) {
 		client = clientService.save(client);
+//comment test
 
+		
 		String uri = ServletUriComponentsBuilder.fromCurrentContextPath().path("/{id}").buildAndExpand(client.getId())
 				.toString();
 		HttpHeaders headers = new HttpHeaders();

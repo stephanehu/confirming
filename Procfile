@@ -1,0 +1,1 @@
+web: java  -jar target/confirming-22.04.2019-SNAPSHOT.jar -Dserver.port=$PORT
