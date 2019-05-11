@@ -33,6 +33,9 @@ public class ClientControlleur {
 		return new ResponseEntity<Page<Clients>>(pages, HttpStatus.OK);
 	}
 
+	//Get client by id
+	
+
 	@GetMapping("/{id}")
 	public ResponseEntity<?> select(@PathVariable(name = "id", required = true) Long id) {
 		Clients client = clientService.get(id);
